@@ -11,7 +11,9 @@
     console.log("Mounted")
   }) 
 
- 
+  onUpdated(() => {
+    console.log("Updated")
+  })
   
 </script>
 
