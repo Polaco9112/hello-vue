@@ -1,10 +1,10 @@
 <template>
-  <CycleOption />
+  <PostList />
 </template>
 
 <script lang="ts" setup>
   // import ClassBind from './components/ClassBind.vue'
-  import CycleOption from './components/CycleOption.vue';
+  import PostList from './components/PostList.vue';
 </script>
 
 <style>
