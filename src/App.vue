@@ -1,10 +1,10 @@
 <template>
-  <PostList />
+  <ComputedComposition />
 </template>
 
 <script lang="ts" setup>
   // import ClassBind from './components/ClassBind.vue'
-  import PostList from './components/PostList.vue';
+  import ComputedComposition from './components/ComputedComposition.vue';
 </script>
 
 <style>
