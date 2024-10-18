@@ -6,30 +6,21 @@
   </div>
 </template>
 
-<script lang="ts">
-  import { defineComponent, Ref, ref } from 'vue';
+<script lang="ts" setup>
+import { defineProps, defineEmits, Ref, ref } from 'vue';
+const props = defineProps({
+  title: String,
+  content: String
+})
 
-  export default defineComponent({
-    name: 'PostDetails',
-    props: {
-      title: {
-        type: String,
-        required: true
-      },
-      content: {
-        type: String,
-        required: false,
-        default: "Este post no tiene contenido"
-      }
-    },
-    emits: ["alertMsg"],
-    setup(props, {emit}) {
-      const sendAlert = () => {
-        emit("alertMsg", "Necesito mas post por favor")
-      }
-      return { props, sendAlert }
-    }
-  })
+const emit = defineEmits(['alertMsg'])
+
+const sendAlert = () => {
+  emit("alertMsg", "Necesito mas post por favor")
+}
+
+let message: Ref<string> = ref("")
+
 </script>
 
 <style scoped>
