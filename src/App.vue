@@ -1,10 +1,9 @@
 <template>
-  <ComputedComposition />
+  <ExerciseComputed />
 </template>
 
 <script lang="ts" setup>
-  // import ClassBind from './components/ClassBind.vue'
-  import ComputedComposition from './components/ComputedComposition.vue';
+  import ExerciseComputed from './components/ExerciseComputed.vue';
 </script>
 
 <style>
